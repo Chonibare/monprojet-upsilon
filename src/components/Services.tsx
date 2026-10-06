@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Images
 import serviceHero from "../assets/servicehero.png";
-import telephone from "../assets/telephone.png";
+
 
 // Logos
 import logoUpslon from "../assets/logovioletupslon.png";

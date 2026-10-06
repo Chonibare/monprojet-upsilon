@@ -61,10 +61,7 @@ import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
 
 
-import tech2 from "../assets/tech2.jpg";
-import tech3 from "../assets/tech3.jpg";
-import tech4 from "../assets/tech4.jpg";
-import tech5 from "../assets/tech5.jpg";
+
 
 
 const ServiceCard = ({
@@ -117,7 +114,7 @@ const Home = () => {
 
 
   
-const [activeTab, setActiveTab] = useState("Accueil");
+
 
 const navLinks = [
   { name: "Accueil", href: "/" },
@@ -126,17 +123,9 @@ const navLinks = [
   { name: "Clients", href: "/Casclients" },
 ];
 
-const [hoveredTab, setHoveredTab] = useState(null);
+const [hoveredTab, setHoveredTab] = useState<string | null>(null);
 
 
-  const partners = [
-   
-    { name: "Mifos X", logo: tech2 },
-    { name: "OpenMRS", logo: tech3 },
-    { name: "DataForge", logo: tech4 },
-    { name: "SOGETEC", logo: tech5 },
-   
-  ];
 
   const services = [
     {
