@@ -1,0 +1,46 @@
+/* src/index.css ou src/App.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+}
+
+/* Typo responsive automatique */
+h1 { font-size: clamp(2.5rem, 6vw + 1rem, 5rem); }
+h2 { font-size: clamp(2rem, 5vw + 0.5rem, 3.5rem); }
+h3 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+p  { font-size: clamp(1rem, 2.2vw, 1.125rem); }
+
+/* Media queries utiles */
+@media (min-width: 768px) {
+  .container { padding: 0 2rem; }
+}
+
+@media (min-width: 1024px) {
+  html { font-size: 112.5%; } /* passe à 18px de base */
+}
